@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background: linear-gradient(to right, #8e2de2, #4a00e0) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.MainHome{
+    top: 50%;
+    height: 100vh;
+}
+
+h1{
+    font-size: 6rem;
+    font-family: 'Unica One', cursive;
+    color: white;
+    display: block;
+}
+
+h2{
+    font-size: 3.5rem;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+.subText{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.subtitile{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+@media screen and (max-width: 601px) {
+    .subtitile{
+    font-size: 2.5rem;
+    font-weight: 400;
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+}
+
+a{
+    color: orange;
+}
+
+
+@media screen and (max-width: 601px) {
+    h1{
+        font-size: 4.5rem;
+        font-family: 'Unica One', cursive;
+        color: white;
+        display: block;
+    }
+
+    h2{
+        font-size: 2.5rem;
+        font-weight: 400;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        display: block;
+    }
+
+    h3{
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        display: block;
+    }
+}
+
+
+
+.tableN{
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 60%;
+    text-align:center;
+}
+
+.tableN td{
+    border: 4px solid white;
+    width: 20%;
+}
+
+.tableN th, td {
+  padding: 15px;
+}
+
+@media screen and (max-width: 601px) {
+    .tableN{
+        border-collapse: collapse;
+        border-style: hidden;
+        width: 30%;
+        text-align:center;
+    }
+
+    .tableN td{
+        border: 4px solid white;
+        width: 10%;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .tableN td h3{
+        font-size: 1rem;
+        font-weight: 800;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        display: block;
+    }
+    th, td {
+    padding: 5px;
+    }
+}
+
+
+.tableJ{
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 60%;
+    text-align:center;
+}
+
+.tableJ th{
+    font-weight: 500;
+    width: 20%;
+}
+
+.tableJ td{
+    border: 2px solid white;
+    font-size: 2.5rem;
+}
+
+.grandTotal {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 601px) {
+    .tableJ{
+        border-collapse: collapse;
+        border-style: hidden;
+        width: 90%;
+        text-align:center;
+    }
+
+    .tableJ th{
+        font-weight: 400;
+        font-size: 1.5rem;
+        width: 30%;
+    }
+
+    .tableJ td{
+        border: 2px solid white;
+        width: 30%;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .tableJ td h3{
+        font-size: 1rem;
+        font-weight: 800;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        display: block;
+    }
+    th, td {
+    padding: 5px;
+    }
+}
+
+
+.tableM{
+    border-collapse: collapse;
+    border-style: hidden;
+    width: 60%;
+    text-align:left;
+}
+
+.tableM td{
+    border: 4px solid white;
+    width: 20%;
+    vertical-align: top;
+    font-size: 2rem;
+}
+
+.tableM th, td {
+  padding: 15px;
+}
+
+@media screen and (max-width: 601px) {
+    .tableM{
+        border-collapse: collapse;
+        border-style: hidden;
+        width: 90%;
+        text-align:center;
+    }
+
+    .tableM td{
+        border: 4px solid white;
+        width: 45%;
+        font-size: 1rem;
+        font-weight: 600;
+        vertical-align: top;
+    }
+    .tableM td h3{
+        font-size: 1rem;
+        font-weight: 800;
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        display: block;
+    }
+    th, td {
+    padding: 5px;
+    }
+}
+
+
+
+.Scrollcontainer {
+  position: relative;
+  width: 24px;
+  height: 24px;
+}
+
+.chevron {
+  position: absolute;
+  left: 50%;
+  top: 93%;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #fff;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+@media screen and (min-width: 750px) {
+    .chevron {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+    }
+}
+
+@media screen and (max-width: 601px) {
+    .chevron {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        width: 28px;
+        height: 8px;
+        opacity: 0;
+        transform: scale3d(0.5, 0.5, 0.5);
+        animation: move 3s ease-out infinite;
+        display: none;
+    }
+}

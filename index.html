@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Pi_Defense</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="navbar.css" rel="stylesheet" type="text/css" />
+        <link rel="shortcut icon" href="https://i.pinimg.com/originals/7a/8a/c8/7a8ac85535543ce0fa5e469060f1c1bc.png" type="image/x-icon" sizes="32x32">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <style>
+            .embed-container { 
+            position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+            }
+            .embed-container iframe, .embed-container object, .embed-container embed { 
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+            }
+        </style>
+    </head>
+    <body>
+        <section class="FirstBlock">
+            <nav class="nav">
+                <div class="navContainer">
+                    <div class ="logo">
+                        <a href="#MainHome">Pi_Defense</a>
+                    </div>
+                    <div id="mainListDiv" class="main_list">
+                        <ul class="navlinks">
+                            <li><a href='#ProductID'>Our Product</a></li>
+                            <li><a href='#BenefitID'>Benefits</a></li>
+                            <li><a href='#CostID'>Cost</a></li>
+                            <li><a href="#RRID">Roles and Responsibilities</a></li>
+                            <li><a href='#demoID'>Demo</a></li>
+                            <li><a href='#aboutUsID'>About Us</a></li>
+                        </ul>
+                    </div>
+                    <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                    </span>
+                </div>
+            </nav>
+            <script>
+                $('.navTrigger').click(function(){
+                    $(this).toggleClass('active');
+                    $('#mainListDiv').toggleClass('show_list');
+                    $('#mainListDiv').fadeIn();
+                });
+            </script>
+            <script>
+                $(window).scroll(function() {
+                    if ($(document).scrollTop() > 50) {
+                        $('.nav').addClass('affix');
+                    } else {
+                        $('.nav').removeClass('affix');
+                    }
+                });
+            </script>
+        </section>
+        <center>
+            <section class="MainHome" id="MainHome">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <br>
+                            <br>
+                            <center>
+                                <h1 class="main-title">
+                                    Pi_Defense
+                                </h1>
+                                <h2 class="subText">
+                                    Mask and Occupation Detector
+                                </h2>
+                                <br>
+                                <h3 class="subtitile">
+                                    A Machine/Deep learning product that is able to detect if a person is wearing a mask or not while keeping track of the number of people entering and exiting the temple.
+                                </h3>
+                            </center>
+                        </div>
+                    </div>
+                    <div class="container" style="align-items: center;justify-content: center;">
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                        <div class="chevron"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="Product" id="ProductID">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <center>
+                                <h1 class="main-title">
+                                    Our Product
+                                </h1>
+                                <h3 style="font-size:2rem;">
+                                    <table style="width:50%;">
+                                        <tr>
+                                            <th style='text-align:left;'>
+                                                <h3>
+                                                    <ul>
+                                                        <li style="padding:10px;">
+                                                            Detects people that are not wearing a mask when they enter the temple.
+                                                        </li>
+                                                        <ul>
+                                                            <li style="padding:10px;">
+                                                                If a person without a mask is detected, a customizable message is played to alert the person to wear a mask.
+                                                            </li>
+                                                        </ul>
+                                                        <li style="padding:10px;">
+                                                            It also keeps account for the number of people that are in the temple.
+                                                        </li>
+                                                        <ul>
+                                                            <li style="padding:10px;">
+                                                                When the max occupancy is reached, a customizable message is played when the next person is detected to let them know that the temple is currently full and they need to wait until someone leaves.
+                                                            </li>
+                                                        </ul>
+                                                    </ul>
+                                                </h3>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </h3>
+                            </center>
+                        </div>
+                    </div>
+                    <a href="#HEADER">
+                        <div class='mouse-wrapper'>
+                            <div class="mouse-icon"></div>
+                            <div class="mouse-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="Benefits" id="BenefitID">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <br>
+                            <br>
+                            <center>
+                                <h1 class="main-title">
+                                    Benefits
+                                </h1>
+                                <br>
+                                <h3 style="font-size:2rem;">
+                                    <table class="tableN">
+                                        <tr>
+                                            <td>
+                                                <h3>
+                                                    COST-EFFICIENT
+                                                </h3>
+                                                Our product provides the same quality output but at a cheaper cost.
+                                            </td>
+                                            <td>
+                                                <h3>
+                                                    SAFER PREMISES
+                                                </h3>
+                                                Our product ensure's the safety of the devotees.
+                                            </td>
+                                            <td>
+                                                <h3>
+                                                    EASY TO INSTALL
+                                                </h3>
+                                                Our product is really easy to assemble and to be put in production.
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <h3>
+                                                    EASY TO MAINTAIN
+                                                </h3>
+                                                The warranty of the materials will cover any hardware problems and we can solve any software bugs.
+                                            </td>
+                                            <td>
+                                                <h3>
+                                                    EASILY EXPANDABLE 
+                                                </h3>
+                                                We can easily expand this product and add more functionalities like Social Distancing.
+                                            </td>
+                                            <td>
+                                                <h3>
+                                                    DETAILED ANALYSIS
+                                                </h3>
+                                                Our product can provide the necessary data to conduct proper analysis of the temple, ie. what times is the temple most busiest at.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </h3>
+                            </center>
+                        </div>
+                    </div>
+                    <a href="#HEADER">
+                        <div class='mouse-wrapper'>
+                            <div class="mouse-icon"></div>
+                            <div class="mouse-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="Cost">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <br id="CostID">
+                            <br>
+                            <center>
+                                <h1 class="main-title">
+                                    Cost
+                                </h1>
+                                <h2>
+                                    <table class="tableJ">
+                                        <tr>
+                                            <th>
+                                                Name
+                                            </th>
+                                            <th>
+                                                Cost & Quantity
+                                            </th>
+                                            <th>
+                                                Total
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Raspberry Pi 4 + Warranty,
+                                                <a href="https://www.amazon.com/dp/B07TC2BK1X?ref=ppx_pop_mob_ap_share" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $66.99 x 2
+                                            </td>
+                                            <td>
+                                                $139.98
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Intel Movidius Stick,
+                                                <a href="https://store.intelrealsense.com/buy-intel-neural-compute-stick-2.html" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $68.95 x 2
+                                            </td>
+                                            <td>
+                                                $137.90
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Raspberry Pi Camera,
+                                                <a href="https://www.amazon.com/dp/B071WP53K7?ref=ppx_pop_mob_ap_share" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $29.98 x 1
+                                            </td>
+                                            <td>
+                                                $29.98
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                USB Camera,
+                                                <a href="https://www.amazon.com/dp/B08B3P9C59/ref=twister_B07NS2ZFFJ?_encoding=UTF8&th=1" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $76.99 x 1
+                                            </td>
+                                            <td>
+                                                $76.99
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Camera Ribbon Extension,
+                                                <a href="https://www.amazon.com/dp/B088CVNQHL?ref=ppx_pop_mob_ap_share" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $5.49 x 1
+                                            </td>
+                                            <td>
+                                                $5.49
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Raspberry Pi Fan Case,
+                                                <a href="https://www.amazon.com/dp/B07CTG5N3V?ref=ppx_pop_mob_ap_share" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $24.99 x 1
+                                            </td>
+                                            <td>
+                                                $24.99
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Bluetooth Speaker,
+                                                <a href="https://www.amazon.com/Creative-Labs-Pebble-Black-Loudspeaker/dp/B0791H74NT/ref=sr_1_4?dchild=1&keywords=usb%2Bspeaker&qid=1598924621&sr=8-4&th=1" target="_blank">Link</a>
+                                            </td>
+                                            <td>
+                                                $19.99 x 2
+                                            </td>
+                                            <td>
+                                                $39.98
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Power Supply
+                                            </td>
+                                            <td>
+                                                $0.00
+                                            </td>
+                                            <td>
+                                                $0.00
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Wifi
+                                            </td>
+                                            <td>
+                                                $0.00
+                                            </td>
+                                            <td>
+                                                $0.00
+                                            </td>
+                                        </tr>
+                                        <tr class="grandTotal">
+                                            <td>
+                                            </td>
+                                            <td>
+                                                GRAND TOTAL:
+                                            </td>
+                                            <td>
+                                                $455.31
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </h2>
+                            </center>
+                        </div>
+                    </div>
+                    <a href="#HEADER">
+                        <div class='mouse-wrapper'>
+                            <div class="mouse-icon"></div>
+                            <div class="mouse-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="RR" id="RRID">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <br>
+                            <br>
+                            <center>
+                                <h1 class="main-title">
+                                    Roles and Responsibilities
+                                </h1>
+                                <br>
+                                <h2></h2>
+                                <h2>
+                                    <table class="tableM">
+                                        <tr>
+                                            <th>
+                                                <h2 style="text-align:center;">
+                                                    NESSP
+                                                </h2>
+                                            </th>
+                                            <th>
+                                                <h2 style="text-align:center;">
+                                                    US
+                                                </h2>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ul style="">
+                                                    <li>
+                                                        Need to provide us with funds for installing our product
+                                                    </li>
+                                                    <li>
+                                                        Need to provide a suitable environment for our product
+                                                    </li>
+                                                    <li>
+                                                        There should be a constant power supply
+                                                    </li>
+                                                    <li>
+                                                        A normal temperature (50° - 90° F)
+                                                    </li>
+                                                    <li>
+                                                        If something breaks, provide funds for replacing the hardware
+                                                    </li>
+                                                    <li>
+                                                        Individual Appreciation Certificate
+                                                    </li>
+                                                    <li>
+                                                        Individual Volunteer Hour Certificates
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>
+                                                <ul>
+                                                    <li>
+                                                        As a volunteer...
+                                                    </li>
+                                                    <ul>
+                                                        <li>
+                                                            System Design
+                                                        </li>
+                                                        <li>
+                                                            Installation
+                                                        </li>
+                                                        <li>
+                                                            Maintenance
+                                                        </li>
+                                                        <li>
+                                                            Hardware Software
+                                                        </li>
+                                                        <li>
+                                                            Software Support
+                                                        </li>
+                                                    </ul>
+                                                </ul>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </h2>
+                            </center>
+                        </div>
+                    </div>
+                    <a href="#HEADER">
+                        <div class='mouse-wrapper'>
+                            <div class="mouse-icon"></div>
+                            <div class="mouse-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="Demonstration" id="demoID">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <br>
+                            <br>
+                            <center>
+                                <h1 class="main-title">
+                                    Demo
+                                </h1>
+                                <h3>
+                                    Coming Soon!!!
+                                    <!--<div class='embed-container'><iframe src='https://www.youtube.com/embed/L4ThmJuHLz4' frameborder='0' allowfullscreen></iframe></div>-->
+                                </h3>
+                            </center>
+                        </div>
+                    </div>
+                    <a href="#HEADER">
+                        <div class='mouse-wrapper'>
+                            <div class="mouse-icon"></div>
+                            <div class="mouse-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section class="AboutUs" id="aboutUsID">
+                <div class="container demo">
+                    <div class="content">
+                        <div id="large-header" class="large-header">
+                            <section class="help">
+                                <canvas id="demo-canvas"></canvas>
+                            </section>
+                            <br>
+                            <br>
+                            <center>
+                                <h1 class="main-title">About Us</h1>
+                                <h2>
+                                    <table style="width:60%">
+                                        <tr>
+                                            <th>
+                                                <h2 style="font-size:2rem;">Srinivas Sriram</h2>
+                                                <h2 style="font-size:1.8rem;">Email: <a href="mailto:srinivassriram06@gmail.com" target="_blank" style="color: white;">srinivassriram06@gmail.com</a></h2>
+                                                <h2 style="font-size:2rem;">Milan Behera</h2>
+                                                <h2 style="font-size:1.8rem;">Email: <a href="mailto:mishal.behera@gmail.com" style="color: white;" target="_blank">mishal.behera@gmail.com</a></h2>
+                                                <h2 style="font-size:2rem;">Aditya Anand</h2>
+                                                <h2 style="font-size:1.8rem;">Email: <a href="mailto:adityaanand.muz@gmail.com" style="color: white;" target="_blank">adityaanand.muz@gmail.com</a></h2>
+                                                <h2 style="font-size:2rem;">Abhisar Anand</h2>
+                                                <h2 style="font-size:1.8rem;">Email: <a href="mailto:abhisar.muz@gmail.com" style="color: white;" target="_blank">abhisar.muz@gmail.com</a></h2>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                </h2>
+                            </center>
+                        </div>
+                    </div>
+                    <a href="#HEADER">
+                        <div class='mouse-wrapper'>
+                            <div class="mouse-icon"></div>
+                            <div class="mouse-arrow"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </center>
+    </body>
+</html>
