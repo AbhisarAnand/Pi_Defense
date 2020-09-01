@@ -222,7 +222,7 @@ a{
         border-collapse: collapse;
         border-style: hidden;
         width: 90%;
-        text-align:center;
+        text-align:left;
     }
 
     .tableM td{
